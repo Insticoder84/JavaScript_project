@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <title>javascript project</title>
+
+</head>
+
+<body>
+
+  <div id="popup" class="popup">
+    <div class="popupcontent">
+      <span class="close-button">&times;</span>
+      <img src="ecell.png" class="pimg">
+      <p class="ptext">HEY Welcome!!<br>Have  u learnt poker ??</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title">
+
+    <h1 class="title">
+      Institute-wise Vacant seats in IITs based on JEE (Advanced) from 2014 to 2017
+    </h1>
+
+    </div>
+
+    <div class="selection">
+
+      <label for="iits">
+        SELECT THE IIT
+      </label>
+      <select name="iits" id="iits">
+        <option value="0">
+          IIT KHARAGPUR
+        </option>
+        <option value="1">
+          IIT BOMBAY
+        </option>
+        <option value="2">
+          IIT DELHI
+        </option>
+        <option value="3">
+          IIT KANPUR
+        </option>
+        <option value="4">
+          IIT MADRAS
+        </option>
+        <option value="5">
+          IIT ROORKEE
+        </option>
+        <option value="6">
+          IIT GUWAHATI
+        </option>
+        <option value="7">
+          IIT VARANASI
+        </option>
+        <option value="8">
+          IIT BHUBANESWAR
+        </option>
+        <option value="9">
+          IIT HYDERABAD
+        </option>
+      </select>
+
+    </div>
+
+  <div class ="loaded">
+    <div class="data">
+
+      <h1 id="new">you will be able to see your desired data here</h1>
+      <p id="name"></p>
+      <p id="2014"></p>
+      <p id="2015"></p>
+      <p id="2016"></p>
+      <p id="2017"></p>
+    </div>
+    
+    <div class="graph" id="myplot" style="width:100%;max-width:100em"></div>
+  
+  </div>
+  
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

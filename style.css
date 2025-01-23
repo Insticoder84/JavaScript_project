@@ -1,0 +1,146 @@
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #2e3944;
+  border: 2px solid #d3d9d4;
+}
+
+/* Title Styling */
+.title h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #66fcf1;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Dropdown Styling */
+.selection label {
+  font-size: 1.2em;
+  margin-right: 10px;
+  color: #66fcf1;
+  text-align: center;
+}
+
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #357ec6;
+}
+
+.data {
+  border: 2px solid #66fcf1;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  background-color: #1c3f62;
+  border-radius: 5px;
+  color: #66fcf1;
+  text-align: center;
+}
+
+select:hover {
+  border-color: #007bff;
+}
+
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #66fcf1;
+}
+
+p {
+  font-size: 1.2em;
+  color: #66fcf1;
+  margin-bottom: 10px;
+}
+
+.loaded {
+  display: flex;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.popup {
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popupcontent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(31, 11, 27, 0.3);
+}
+
+.pimage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+
+.ptext {
+  font-size: 18px;
+  color: hsl(33, 77%, 55%);
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  select {
+    width: 100%;
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+
+select:hover,
+select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
